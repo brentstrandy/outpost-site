@@ -1,4 +1,7 @@
-ld/
+
+
+
+build/
 bin/
 .bundle/
 .sass-cache/
