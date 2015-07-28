@@ -3,18 +3,34 @@ button,
   outline: 0
   border-radius: 10px
   padding: 15px 20px
+  &::-webkit-input-placeholder
+    color: rgba(255,255,255,.5)
+  &:-moz-placeholder
+    color: rgba(255,255,255,.5)
+  &::-moz-placeholder
+    color: rgba(255,255,255,.5)
+  &:-ms-input-placeholder
+    color: rgba(255,255,255,.5)
 
-#mc_embed_signup input.mc_inline_error
-  border-color: #8a4d52
+#mce-responses
+  position: relative
+
+.response
+  position: absolute
+  top: 60px
+
+#mc_embed_signup input.mce_inline_error
+  border-color: $error !important
+  &~ .button
+    background: $error !important
 
 div.mce_inline_error
-  background: transparent
-  color: #8a4d52
+  background: transparent !important
+  color: $error !important
 
 #mc_embed_signup
   max-width: 470px
   margin: 0 auto
-  overflow: auto
 
 #mce-EMAIL
   border: 2px solid $c-text
