@@ -5,5 +5,20 @@
 .sign-up
   %h3 A Game of Collaborative Tower Defense
   %p Currently in Alpha; Sign up to play
-  %input{:value => "Email Address"}
-  %button Submit
+
+  #mc_embed_signup
+    %form#mc-embedded-subscribe-form.validate{:action => "//diademstudios.us10.list-manage.com/subscribe/post?u=f4801a8db7450d31dfa8b18d2&amp;id=349417df0d", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+      #mc_embed_signup_scroll
+        .mc-field-group
+          %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => ""}
+        #mce-responses.clear
+          #mce-error-response.response{:style => "display:none"}
+          #mce-success-response.response{:style => "display:none"}
+        / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+        %div{:style => "position: absolute; left: -5000px;"}
+          %input{:name => "b_f4801a8db7450d31dfa8b18d2_349417df0d", :tabindex => "-1", :type => "text", :value => ""}/
+        .clear.mc-field-group
+          %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+  %script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
+  :javascript
+    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);

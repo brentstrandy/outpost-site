@@ -1,21 +1,41 @@
 input,
-button
+button,
   outline: 0
   border-radius: 10px
   padding: 15px 20px
 
-input
+#mc_embed_signup input.mc_inline_error
+  border-color: #8a4d52
+
+div.mce_inline_error
+  background: transparent
+  color: #8a4d52
+
+#mc_embed_signup
+  max-width: 470px
+  margin: 0 auto
+  overflow: auto
+
+#mce-EMAIL
   border: 2px solid $c-text
   background: transparent
   color: $c-text
   min-width: 220px
   margin-right: 10px
+  max-width: 500px
   +respond-to($g-s)
     min-width: 300px
 
-button
+#mc-embedded-subscribe
   background: $c-text
   border: none
   color: $c-text-invert
+  padding: 17px 20px
+  transition: background, .25s, color, .25s
+  &:hover
+    background: $c-text-invert
+    color: #fff
 
+.mc-field-group
+  float: left
 
