@@ -1,1 +1,1 @@
-(function(){}).call(this);
+(function(){dragula([document.getElementById("1"),document.getElementById("2"),document.getElementById("3")]),$(document).ready(function(){$(".modal").each(function(){$(this).appendTo("body")}),$(".has-modal").on("click",function(){var a;a=".modal--"+$(this).data().id,$(a).fadeIn().addClass("is-open"),$(".overlay").fadeIn()}),$(".overlay").on("click",function(){var a;a=".modal--"+$(".modal.is-open").data().id,$(a).fadeOut().removeClass("is-open"),$(".overlay").fadeOut()})})}).call(this);
